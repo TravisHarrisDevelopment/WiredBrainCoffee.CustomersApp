@@ -8,6 +8,7 @@
         Title="MainWindow" Height="450" Width="800" FontSize="20">
     <Grid>
         <Button Content="Add customer"
+                x:Name="btnAddCustomer"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Margin = "10"

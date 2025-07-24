@@ -23,7 +23,7 @@ namespace WiredBrainCoffee.CustomersApp
 
         private void ButtonAddCustomer_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Customer Added!");
+            btnAddCustomer.Content = "Customer Added!";
         }
     }
 }
