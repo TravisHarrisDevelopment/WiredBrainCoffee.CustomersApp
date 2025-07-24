@@ -7,12 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" FontSize="20">
     <Grid>
-        <Button Content="Add customer"
+        <Button 
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
-                Margin = "10"
-                Click="ButtonAddCustomer_Click">
-                
+                Margin = "10" Width="75"
+                Click="ButtonAddCustomer_Click" >
+
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Images/add.png" Height="18" 
+                           Margin="0 0 5 0"/>
+                <TextBlock Text="Add" />
+            </StackPanel>
+
+
         </Button>
+
+
     </Grid>
 </Window>
