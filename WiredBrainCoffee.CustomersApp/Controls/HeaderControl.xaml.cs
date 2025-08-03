@@ -23,6 +23,7 @@ namespace WiredBrainCoffee.CustomersApp.Controls
         public HeaderControl()
         {
             InitializeComponent();
+            
         }
     }
 }

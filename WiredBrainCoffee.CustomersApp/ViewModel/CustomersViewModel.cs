@@ -15,6 +15,7 @@ namespace WiredBrainCoffee.CustomersApp.ViewModel
         private CustomerItemViewModel? _selectedCustomer;
         private NavigationSide _navigationSide;
 
+        public bool IsCustomerSelected => SelectedCustomer != null;
         public DelegateCommand AddCommand { get; }
         public DelegateCommand MoveNavigationCommand { get; }
         public DelegateCommand DeleteCommand { get; }
@@ -38,6 +39,7 @@ namespace WiredBrainCoffee.CustomersApp.ViewModel
             {
                 _selectedCustomer = value;
                 RaisePropertyChanged();
+                RaisePropertyChanged(nameof(IsCustomerSelected));
                 DeleteCommand.RaiseCanExecuteChanged();
             }
         }
