@@ -54,7 +54,7 @@ namespace WiredBrainCoffee.CustomersApp.ViewModel
             }
         }
 
-        public async Task LoadAsync()
+        public async override Task LoadAsync()
         {
             if (Customers.Any())
             {
